@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #edf2dc;
+    --secondary-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+.hero {
+    min-height: 100vh;
+    width: 100%;
+    background: var(--primary-color);
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+}
+
+nav {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px 0;
+}
+
+nav h1 {
+    color: var(--secondary-color);
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+    color: #3721ff;
+}
+
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+.info {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+
+.info h1 {
+    font-size: 50px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+span.fname {
+    color: #3721ff;
+}
+
+.info p {
+    color: var(--secondary-color);
+    line-height: 27px;
+}
+
+.info a{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 30px 0;
+    display: inline-block;
+}
+
+.info a:hover {
+    background: #3721ff;
+}
+
+.img-box {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 45%;
+    height: 80%;
+}
+
+.img-box img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    transition: bottom 1s, left 1s;
+}
+
+.img-box:hover .back-image {
+    bottom: 40px;
+}
+
+.img-box:hover .main-image {
+    left: 54%;
+}
+
+.social {
+   margin-top: 50px;
+   margin-left: 8%; 
+}
+
+.social a {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-right: 20px;
+}
+
+.social a:hover {
+    color: #3721ff;
+}
+
